@@ -9,6 +9,8 @@ gem 'importmap-rails', '1.1.5'
 gem 'jbuilder',        '2.14.1'
 gem 'puma',            '6.6.1'
 gem 'rails',           '8.0.2.1'
+gem 'bcrypt',          '3.1.18'
+gem "bootstrap-sass",  '3.4.1'
 gem 'sassc-rails',     '2.1.2'
 gem 'sprockets-rails', '3.4.2'
 gem 'sqlite3',         '2.7.3'
@@ -36,6 +38,10 @@ group :test do
   gem 'rails-controller-testing', '1.0.5'
   gem 'selenium-webdriver',       '4.8.3'
   gem 'webdrivers',               '5.2.0'
+end
+
+group :production do
+  gem "pg", "1.3.5"
 end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
