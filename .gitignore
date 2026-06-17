@@ -38,3 +38,6 @@
 .irb_history
 
 dump.rdb
+
+# Ignore local gems in vendor/bundle
+/vendor/bundle
